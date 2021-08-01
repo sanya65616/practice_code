@@ -1,19 +1,25 @@
 import javax.swing.*;
+import java.awt.ComponentOrientation;
 
 import org.junit.jupiter.params.shadow.com.univocity.parsers.common.DataValidationException;
 
 import java.awt.*;
 import java.awt.event.*;
 
-public class Calculator {
+public class SwingCalculator extends JFrame {
 	JFrame frame;
 	JPanel panel;
 	JLabel label1,label2,label3;
 	JTextField field1,field2;
-	Button add,sub,mult,div,mod;
+	JButton add,sub,mult,div,mod;
 	
+	public SwingCalculator(String string) {
+		// TODO Auto-generated constructor stub
+		super(string);
+	}
+
 	public static void main(String[] args) {
-	  Calculator cal = new Calculator();
+	  SwingCalculator cal = new SwingCalculator("Calculator");
 	  cal.go();
 	}
 
@@ -24,14 +30,26 @@ public class Calculator {
       
       label1 = new JLabel("Enter 1st number");
       label2 = new JLabel("Enter 2nd number");
-      field1 = new JTextField(30);
-      field2 = new JTextField(30);
-      add = new Button("Add");
-      sub = new Button("Subtract");
-      mult = new Button("Multiply");
-      div = new Button("Divide");
-      mod = new Button("Module");
+      field1 = new JTextField();
+      field2 = new JTextField();
+      add = new JButton("Addition");
+      sub = new JButton("Subtract");
+      mult = new JButton("Multiply");
+      div = new JButton("Divide");
+      mod = new JButton("Module");
       label3 = new JLabel("");
+      panel.setLayout(null);
+      
+      label1.setBounds(500, 120, 120, 20);
+      field1.setBounds(640, 120, 100, 20);
+      label2.setBounds(500, 170, 120, 20);
+      field2.setBounds(640, 170, 100, 20);
+      add.setBounds(380, 250, 100, 20);
+      sub.setBounds(500, 250, 100, 20);
+      mult.setBounds(620, 250, 100, 20);
+      div.setBounds(740, 250, 100, 20);
+      mod.setBounds(860, 250,100, 20);
+      label3.setBounds(600, 320, 200, 20);
 
 	  field1.setText("");
 	  field1.addActionListener(new Field1Listener());
@@ -60,8 +78,9 @@ public class Calculator {
       mod.addActionListener(new modListener());
     
       frame.getContentPane();
-      frame.setSize(300, 300);
+      frame.setSize(400, 500);
       frame.setVisible(true);
+      frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
      class Field1Listener implements ActionListener{
     	 public void actionPerformed(ActionEvent event) {
