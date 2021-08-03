@@ -1,2 +1,5 @@
 .metadata
-target
+*/target
+*/bin
+*.class
+*.log
