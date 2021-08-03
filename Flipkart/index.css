@@ -1,0 +1,193 @@
+
+body{
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    background-color: rgb(233, 229, 229);
+    font-family: Arial, Helvetica, Raleway and Museo;
+    font-size: 15px;
+}
+
+.navigationBar{
+    height: 60px;
+    width: 100%;
+    margin: 0%;
+    background-color: rgb(34, 142, 224);
+    overflow: hidden;
+    position: fixed;
+    top: 0px;
+}
+.content{
+    display: flex;
+    padding: 7px;
+    margin: 7px;
+    font-weight: bold;
+}
+.content  img{
+    height: 40px;
+    width: 90px;
+    margin-left: 15%;
+    cursor: pointer;
+    top: -80px;
+    
+}
+
+.search{
+    display: flex;
+    position: relative;
+}
+.search input{
+    height: 32px;
+    width: 500px;
+    margin-left: 2%;
+    border: none;
+}
+.content .search button{
+    margin-left: 0px;
+    height: 34px;
+    width: 40px;
+    border: none;
+    background-color: white;
+    color:  rgb(34, 142, 224);
+    margin-right: 60px;
+    cursor: pointer;
+}
+.content button{
+    height: 30px;
+    width: 120px;
+    color:  rgb(34, 142, 224);
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+.content a{
+    color: white;
+    padding: 1px;
+    margin: 3px;
+    margin-left: 50px;
+    cursor: pointer;
+}
+.content i{
+    margin-right: 8px;
+    margin-left: 8px;
+}
+.menuBar{
+    height: 40px;
+    width: 100%;
+    margin-top: 60px;
+    background-color: white;
+    display:block;
+    box-shadow:0px 0px 5px 2px rgb(235, 231, 231);
+    border: rgb(160, 155, 155);
+}
+.menuBar button{
+    color: #000;
+    background-color: white;
+    border: none;
+    height: 30px;
+    width: 80px;
+    display:inline-flex;
+    margin-top: 5px;
+    margin-left: 40px;
+    font-size: 12px;
+    align-items: center;
+    font-weight: bold;
+
+}
+.menuBar button:hover{
+    color: rgb(34, 142, 224);
+    cursor: pointer;
+    
+}
+
+.addSlide{
+    margin: 0px;
+    display: block;
+    padding: 7px;
+    height: 300px;
+    width: 100%;
+}
+.addSlide img{
+    height: 300px;
+    width: 100%;
+
+}
+.addSlide img:hover{
+    cursor: pointer;
+}
+.joint{
+    height: 300px;
+    width: 100%;
+    margin: 4px;
+    display: flexbox;
+    position: relative;
+    overflow: hidden;
+    margin-top: 3px;
+   
+}
+.joint .products{
+    float: left;
+    width: 84%;
+    background-color: white;
+
+    
+}
+.joint .sale{
+    float: right;
+    background-color: white;
+}
+.products button{
+    height: 270px;
+    width: 370px;
+    border: none;
+    margin-right: 0px;
+    padding: 0px;
+    margin-top: 0px;
+   
+}
+.products button:hover{
+    cursor: pointer;
+    
+}
+.buttons{
+    padding: 0px;
+    margin: 0px;
+    background-color: white;
+    font-weight: bold;
+
+}
+.buttons img{
+    height: 160px;
+    width: 200px;
+    margin-bottom: 40px;
+    transition: transform .1s; /* Animation */
+}
+.buttons img:hover{
+    transform: scale(1.1);
+}
+.sale{
+    border: none;
+    cursor: pointer;
+
+}
+.sale img{
+    height: 310px;
+    width: 200px;
+}
+.offer{
+    height: 220px;
+    width: 433px;
+    margin: 5px;
+    margin-left: 7px ;
+    background-color:white;
+    display: inline-block;
+    align-items: center;
+}
+.offer img{
+    height: 200px;
+    width: 410px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+

@@ -1,0 +1,442 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    background-color: rgb(233, 235, 238);
+    font-family: Tahoma;
+}
+button:hover{
+    cursor: pointer;
+}
+.navigationBar{
+    height: 60px;
+    width: 100%;
+    background-color: white;
+    top: 0px;
+    position: sticky;
+    overflow: hidden;
+}
+.content{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    position: relative;
+    margin-top: 5px;  
+}
+.content img{
+    height: 50px;
+    width: 68px;
+    margin-left: 8px;
+    cursor: pointer;
+    
+}
+.search{
+    display: flex;
+    position: relative;
+}
+.content .search button{
+    height: 40px;
+    width: 30px;
+    margin-top: 7px;
+    border-radius: 20px 0px 0px 20px;
+    border: none;
+    margin-right: 0px;
+    background-color: rgb(233, 235, 238);
+    cursor: pointer;
+}
+
+
+.content input{
+    height: 38px;
+    width: 200px;
+    margin-right: 80px;
+    margin-top: 7px;
+    border-radius: 0px 20px 20px 0px;
+    border: none;
+    margin-left: 0px;
+    background-color: rgb(233, 235, 238);
+   
+}
+.navigationBar .content input:hover{
+    cursor: text;
+}
+
+.content .center-content{
+    align-items: center;
+    margin-left: 60px;
+}
+ .content .center-content button{
+    height: 50px;
+    width: 100px;
+    border-radius: 10px;
+    border: none;
+    background-color: white;
+}
+.center-content button:hover{
+    cursor: pointer;
+    background-color: rgb(233, 235, 238);
+    border: none;
+}
+
+.center-content button.active{
+    color: rgb(0 178 255);
+    cursor: pointer;
+    
+}
+
+.content .right-content{
+    margin-left: 150px;
+    position: relative;
+    display: flex;
+}
+.right-content .user{
+    width: 100px;
+    height: 40px;
+    font-weight: bold;
+    background-color: white;
+}
+
+
+.right-content .user img{
+    height: 30px;
+    width: 30px;
+    border-radius: 20px;
+    float: left;
+    margin: 0px;
+}
+.right-content button{
+    height: 40px;
+    width: 40px;
+    border-radius: 40px;
+    border: none;
+    margin-top: 7px;
+    margin-right: 9px;
+    background-color: rgb(233, 235, 238);
+}
+.right-content button:hover{
+    background-color:  rgb(199, 202, 206);
+    border: none;
+    cursor: pointer;
+}
+i{
+    height: 10px;
+    width: 10px;
+}
+.main-body{
+    display: flex;
+    position: relative;
+}
+
+.main-body .vertical-menu{
+    width: 300px;
+    margin-top: 70px;
+}
+.main-body .vertical-menu a{
+    background-color:rgb(233, 235, 238);
+    color: black;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+}
+.main-body .vertical-menu a:hover {
+    background-color: #ccc;
+  }
+  
+  .main-body .center-body{
+      padding: 85px;
+  }
+  .center-body .story button{
+      height: 200px;
+      width: 110px;
+      margin-right: 10px;
+      border-radius: 15px;
+      border: none;
+      font-weight: bold;
+      font-size: 15px;
+      background-color: steelblue;
+  }
+  .story button:hover{
+      transform: scale(1.1);
+      cursor: pointer;
+  }
+  .main-body .post{
+      height: 95px;
+      width: 500px;
+      background-color: white;
+      padding: 15px;
+      margin: 25px;
+      margin-left: 60px;
+      border-radius: 10px;
+      
+  }
+  .upper{
+      display: flex;
+      position: relative;
+  }
+
+  .upper  img{
+      height: 40px;
+      width: 40px;
+      border-radius: 40px;
+      margin-right: 10px;
+  }
+  .upper input{
+      height: 27px;
+      width: 700px;
+      border-radius: 30px;
+      border: none;
+      font-size: 17px;
+      padding: 7px;
+      background-color: rgb(233, 235, 238);
+  }
+  .upper input:hover{
+      cursor: pointer;
+      background-color: rgb(199, 202, 206);
+  }
+  .lower button{
+      height: 40px;
+      width: 160px;
+      border-radius: 10px;
+      border: none;
+      margin-left: 3px;
+      font-weight: bold;
+      font-size: 15px;
+      background-color: white;
+  }
+  .lower button:hover{
+      cursor: pointer;
+      background-color: rgb(233, 235, 238);
+  }
+  .lower i{
+      height: 20px;
+      width: 20px;
+      margin-right: 7px;
+  }
+  .center-body .create-room{
+    height: 35px;
+    width: 500px;
+    background-color: white;
+    padding: 15px;
+    margin: 20px;
+    margin-left: 60px;
+    border-radius: 10px;
+    display: flex;
+    position: relative;
+  }
+  .create-room button{
+      height: 35px;
+      width: 140px;
+      border-radius: 30px;
+      border: 10px rgb(0 178 255);
+      color: rgb(0 106 255) ;
+  }
+  .create-room button:hover{
+   background-color:  rgb(199, 202, 206);
+  }
+  .create-room img{
+      height: 40px;
+      width: 40px;
+      border-radius: 40px;
+      margin-right: 10px;
+      margin-left: 10px;
+      cursor: pointer;
+  }
+  .create-room i{
+      margin-right: 16px;
+  }
+  .main-body .feed{
+    height: 700px;
+    width: 500px;
+    background-color: white;
+    padding: 15px;
+    margin: 25px;
+    margin-left: 60px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .user-details{
+      display: flex;
+      position: relative;
+  }
+ .user-details img{
+      height: 40px;
+      width: 40px;
+      border-radius: 40px;
+  }
+.user-details .name{
+    display: grid;
+}
+.name a{
+    text-decoration: none;
+    margin-left: 10px;
+    color: black;
+}
+.user-details i{
+    margin-top: 20px;
+}
+  .feed button{
+      float: right;
+      height: 40px;
+      width: 40px;
+      border-radius: 40px;
+      border: none;
+      
+  }
+  .feed button:hover{
+      background-color: rgb(199, 202, 206);
+  }
+
+.feed .upload img{
+    height: 500px;
+    width: 500px;
+    margin-top: 30px;
+
+}
+.feed .comment{
+    height: 90px;
+    width: 450px;
+    padding: 25px;
+    background-color: white;
+    overflow: hidden;
+}
+.comment .like button{
+    height: 35px;
+    width: 127px;
+    border-radius: 7px;
+    border: none;
+    float: left;
+    margin-left: 7px;
+    padding-top: 5px;
+
+}
+
+.like i{
+    height: 30px;
+    width: 30px;
+    padding: 5px;
+}
+.comment .input-comment{
+    display: flex;
+    position: relative;
+}
+.comment .input-comment img{
+    height: 40px;
+    width: 40px;
+    border-radius: 40px;
+    margin-right: 10px;
+}
+.input-comment input{
+    height: 23px;
+    width: 600px;
+    border-radius: 30px;
+    border: none;
+    font-size: 17px;
+    padding: 7px;
+    background-color: rgb(233, 235, 238);
+}
+.input-comment input:hover{
+    background-color: rgb(199, 202, 206);
+}
+
+.main-body .right-body{
+    float: right;
+    margin-top: 80px;
+    background-color: rgb(233, 235, 238);
+}
+.right-body button{
+    float: right;
+    height: 30px;
+    width: 70px;
+    margin-top: 10px;
+    border: none;
+    color: rgb(0 106 255);
+    background-color: rgb(233, 235, 238);
+    border-radius: 4px;
+}
+.right-body button:hover{
+    cursor: pointer;
+    background-color: rgb(199, 202, 206);
+}
+
+.right-body .request-part{
+    width: 200px;
+    height: 100px;
+    padding: 7px;
+    border-radius: 10px;
+    background-color: rgb(233, 235, 238);
+}
+.request-part img{
+    height: 40px;
+    width: 40px;
+    border-radius: 40px;
+    margin-right: 10px;
+    margin-top: 15px;
+}
+.request-part p{
+    top: 50px;
+
+}
+.request-part .user{
+    display: flex;
+}
+.request-part .button{
+    display: flex;
+    position: relative;
+}
+.button button{
+    margin: 1px;
+    width: 90px;
+    border: none;
+    border-radius: 7px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: rgb(233, 235, 238);
+}
+.right-body .contacts{
+    margin-top: 20px;
+    width: 200px;
+    height: 50px;
+    background-color:rgb(233, 235, 238);
+    display: flex;
+    position: relative;
+}
+.contacts button{
+    justify-content: right;
+    height: 30px;
+    width: 30px;
+    border-radius: 30px;
+    margin-right: 7px;
+}
+.right-body .active{
+    width: 300px;
+}
+.right-body .active a{
+    background-color:rgb(233, 235, 238);
+    color: black;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+}
+.right-body .active a:hover {
+    background-color: #ccc;
+    border-radius: 10px;
+  }
+   
+  .right-body .group{
+      display: flex;
+      position: relative;
+  }
+ .right-body .group button{
+     height: 30px;
+     width: 30px;
+     border-radius: 30px;
+     margin-right: 10px;
+     color: rgb(95, 92, 92);
+     
+ }
+
+
+
+
+  
+  
